@@ -1,5 +1,8 @@
 import Link from "next/link";
 import ArrowIcon from "../assets/icons/arrow-w.svg";
+import messageImage from "../assets/images/message.png";
+import cursorImage from "../assets/images/cursor.png";
+import Image from "next/image";
 
 export const Hero = () => {
   return (
@@ -21,10 +24,26 @@ export const Hero = () => {
           </Link>
         </div>
         <div className="flex justify-center">
-          <h1 className="text-[min(10vw,128px)] mt-8 font-bold tracking-tighter leading-tight inline-flex text-center">
-            One Task <br />
-            at a time
-          </h1>
+          <div className="inline-flex relative">
+            <h1 className="text-[min(10vw,128px)] mt-8 font-bold tracking-tighter leading-tight inline-flex text-center">
+              One Task <br />
+              at a time
+            </h1>
+            <Image
+              src={messageImage}
+              alt=""
+              height={200}
+              width={200}
+              className="absolute"
+            />
+            <Image
+              src={cursorImage}
+              alt=""
+              height={200}
+              width={200}
+              className="absolute"
+            />
+          </div>
         </div>
         <div className="flex justify-center">
           <p className="text-xl text-center mt-8 max-w-md">
