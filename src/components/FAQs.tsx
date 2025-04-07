@@ -1,3 +1,31 @@
+"use client";
+import clsx from "clsx";
+import PlusIcon from "../assets/icons/plus.svg";
+import MinusIcon from "../assets/icons/minus.svg";
+import React from "react";
+const AccordionItem = ({
+  question,
+  answer,
+}: {
+  question: string;
+  answer: string;
+}) => {
+  const [isOpen, setIsOpen] = React.useState(false);
+  return (
+    <div className="py-7 border-b border-white/30">
+      <div
+        className="flex items-center cursor-pointer"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <span className="text-lg font-bold flex-1">{question}</span>
+        {isOpen ? <MinusIcon /> : <PlusIcon />}
+      </div>
+      <div className={clsx("mt-4", { hidden: !isOpen, "": isOpen === true })}>
+        {answer}
+      </div>
+    </div>
+  );
+};
 const items = [
   {
     question: "What payment methods do you accept?",
@@ -22,5 +50,18 @@ const items = [
 ];
 
 export const FAQs = () => {
-  return null;
+  return (
+    <div className="bg-gradient-to-b from-[#5D2CA8] to-black text-white py-[72px] sm:py-24">
+      <div className="container">
+        <h2 className="text-center max-w-[648px] mx-auto font-bold text-5xl sm:text-6xl tracking-tighter">
+          Frequently asked questions
+        </h2>
+        <div className="mt-12 max-w-[648px] mx-auto">
+          {items.map(({ question, answer }) => (
+            <AccordionItem key={question} question={question} answer={answer} />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 };
