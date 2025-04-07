@@ -7,7 +7,7 @@ import Image from "next/image";
 export const Hero = () => {
   return (
     <div className="relative overflow-clip bg-gradient-to-b from-black via-indigo-900 to-purple-500 text-white py-[72px] sm:py-24">
-      <div className="absolute h-[375px] w-[750px] sm:h-[768px] sm:w-[1536px] rounded-[100%] bg-black left-1/2 -translate-x-1/2 border-[#B48CDE] bg-[radial-gradient(closest-side,#000_82%,#9560EB_)] top-[calc(100%-96px)] sm:top-[calc(100%-120px)]"></div>
+      <div className="absolute h-[375px] w-[750px] sm:h-[768px] sm:w-[1536px] lg:w-[2400px] lg:h-[1200px] rounded-[100%] bg-black left-1/2 -translate-x-1/2 border-[#B48CDE] bg-[radial-gradient(closest-side,#000_82%,#9560EB_)] top-[calc(100%-96px)] sm:top-[calc(100%-120px)]"></div>
       <div className="container relative">
         <div className="flex items-center justify-center">
           <Link
@@ -23,9 +23,9 @@ export const Hero = () => {
             </span>
           </Link>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center  mt-8">
           <div className="inline-flex relative">
-            <h1 className="text-[min(10vw,128px)] mt-8 font-bold tracking-tighter leading-tight inline-flex text-center">
+            <h1 className="text-6xl sm:text-9xl font-bold tracking-tighter leading-tight inline-flex text-center">
               One Task <br />
               at a time
             </h1>
@@ -34,14 +34,14 @@ export const Hero = () => {
               alt=""
               height={200}
               width={200}
-              className="absolute"
+              className="absolute left-[498px] top-[56px]"
             />
             <Image
               src={cursorImage}
               alt=""
               height={200}
               width={200}
-              className="absolute"
+              className="absolute right-[476px] top-[108px]"
             />
           </div>
         </div>
