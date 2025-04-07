@@ -34,7 +34,7 @@ export const Features = () => {
           {features.map(({ title, description }) => (
             <div
               key={title}
-              className="border border-white/30 py-10 px-5 rounded-xl text-center sm:flex-"
+              className="border border-white/30 py-10 px-5 rounded-xl text-center sm:flex-1"
             >
               <div className="bg-white text-black inline-flex w-14 h-14 items-center justify-center rounded-lg">
                 <EcosystemIcon />
