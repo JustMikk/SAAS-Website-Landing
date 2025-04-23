@@ -20,7 +20,12 @@ const AccordionItem = ({
         <span className="text-lg font-bold flex-1">{question}</span>
         {isOpen ? <MinusIcon /> : <PlusIcon />}
       </div>
-      <div className={clsx("mt-4", { hidden: !isOpen, "": isOpen === true })}>
+      <div
+        className={clsx("mt-4", {
+          hidden: !isOpen,
+          "": isOpen === true,
+        })}
+      >
         {answer}
       </div>
     </div>
