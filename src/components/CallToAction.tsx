@@ -28,7 +28,7 @@ export const CallToAction = () => {
         </div>
         <form className="mt-10 flex flex-col sm:flex-row gap-2.5 mx-auto max-w-sm">
           <input
-            className="h-12 flex-1 px-5 font-medium rounded-lg bg-white/10 text-white placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-[#5D2CA8] focus:ring-opacity-50"
+            className="h-12 sm:flex-1 px-5 font-medium rounded-lg bg-white/10 text-white placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-[#5D2CA8] focus:ring-opacity-50"
             type="email"
             placeholder="Your@email.com"
           />
