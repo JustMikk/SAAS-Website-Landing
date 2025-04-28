@@ -1,4 +1,5 @@
 "use client";
+"use client";
 import acmeLogo from "../assets/images/acme.png";
 import quantumLogo from "../assets/images/quantum.png";
 import echoLogo from "../assets/images/echo.png";
@@ -6,6 +7,7 @@ import celestialLogo from "../assets/images/celestial.png";
 import pulseLogo from "../assets/images/pulse.png";
 import apexLogo from "../assets/images/apex.png";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const images = [
   { src: acmeLogo, alt: "Acme Logo" },
@@ -24,14 +26,33 @@ export const LogoTicker = () => {
           Trusted by the world's most innovative teams.
         </h2>
         <div className="flex overflow-hidden gap-16 mt-9 before:content-[''] after:content-[''] before:absolute after:absolute relative before:h-full after:h-full before:w-5 after:w-5 before:top-0 after:top-0 before:left-0 after:right-0 before:bg-gradient-to-r from-black to-transparent after:bg-gradient-to-l">
-          {images.map(({ src, alt }) => (
-            <Image
-              key={alt}
-              src={src}
-              alt={alt}
-              className="flex-none h-8 w-auto"
-            />
-          ))}
+          <motion.div
+            initial={{ translateX: 0 }}
+            animate={{ translateX: "-50%" }}
+            transition={{
+              duration: 10,
+              ease: "linear",
+              repeat: Infinity,
+            }}
+            className="flex gap-16 flex-none pr-16"
+          >
+            {images.map(({ src, alt }) => (
+              <Image
+                key={alt}
+                src={src}
+                alt={alt}
+                className="flex-none h-8 w-auto"
+              />
+            ))}
+            {images.map(({ src, alt }) => (
+              <Image
+                key={alt}
+                src={src}
+                alt={alt}
+                className="flex-none h-8 w-auto"
+              />
+            ))}
+          </motion.div>
         </div>
       </div>
     </div>
