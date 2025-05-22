@@ -11,8 +11,8 @@ export const ProductShowcase = () => {
         <div className="max-w-xl mx-auto">
           <p className="text-xl mt-5 text-white/70 text-center">
             Celebrate the joy of accomplishment with an app designed to track
-            your progress, motivate your efforts, and celebrate your successes,
-            one task at a time.
+            and monitor your progress, motivate your efforts, and celebrate your
+            successes, one task at a time.
           </p>
         </div>
         <Image
