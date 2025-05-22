@@ -25,7 +25,7 @@ export const CallToAction = () => {
         <div className="max-w-xl mx-auto">
           <p className="text-xl mt-5 text-white/70 text-center">
             Celebrate the joy of accomplishment with an app designed to track
-            your progress and motivate your efforts.{" "}
+            and monitor your progress and motivate your efforts.{" "}
           </p>
         </div>
         <form className="mt-10 flex flex-col sm:flex-row gap-2.5 mx-auto max-w-sm">
