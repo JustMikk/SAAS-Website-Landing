@@ -5,7 +5,7 @@
 
 This is a **beautifully designed landing page** for a SAAS business, built using **Next Js**. It showcases the business' offerings, ambiance, and contact details, providing a seamless user experience. The design is modern, responsive, and visually appealing, ensuring that it looks great on all devices.
 
-**Live Demo**: Check it out here: [SAAS Landing Page ]([https://addispathtrailers.com/](https://xylo-saas-website-landing.vercel.app/))
+**Live Demo**: Check it out here: [SAAS Landing Page ](https://xylo-saas-website-landing.vercel.app/)
 
 
 ## 🖼️ Screenshots
@@ -75,4 +75,4 @@ npm run build
 
 ## 🌐 Live Demo
 
-Check out the live demo here: [SAAS Landing Page ]([https://addispathtrailers.com/](https://xylo-saas-website-landing.vercel.app/))
+Check out the live demo here: [SAAS Landing Page ](https://xylo-saas-website-landing.vercel.app/)
